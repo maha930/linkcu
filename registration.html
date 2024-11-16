@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            
+            <label for="fullName">Full Name in English:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="contactMethod">Preferred Method of Contact:</label>
+            <select id="contactMethod" name="contactMethod" required>
+                <option value="phoneCall">Phone Call</option>
+                <option value="whatsapp">WhatsApp</option>
+                <option value="email">Email</option>
+                <option value="all">All of the Above</option>
+            </select>
+
+            <label for="contactNumber">Contact Number:</label>
+            <input type="tel" id="contactNumber" name="contactNumber" required>
+
+            <label for="whatsappNumber">WhatsApp Number (if different):</label>
+            <input type="tel" id="whatsappNumber" name="whatsappNumber">
+
+            <label for="email">E-mail Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="city">What city are you currently in?</label>
+            <select id="city" name="city" required>
+                <option value="giza">Giza</option>
+                <option value="cairo">Cairo</option>
+                <option value="other">أخرى (Other)</option>
+            </select>
+
+            <label for="otherCity">If 'Other', please specify:</label>
+            <input type="text" id="otherCity" name="otherCity">
+
+            <label for="university">Which university do you belong to?</label>
+            <select id="university" name="university" required>
+                <option value="cairoUniversity">Cairo University</option>
+                <option value="ainShamsUniversity">Ain Shams University</option>
+                <option value="helwanUniversity">Helwan University</option>
+                <option value="other">أخرى (Other)</option>
+            </select>
+
+            <label for="faculty">Which faculty do you belong to?</label>
+            <select id="faculty" name="faculty" required>
+                <option value="commerce">Faculty of Commerce</option>
+                <option value="computerScience">Faculty of Computer Science</option>
+                <option value="law">Faculty of Law</option>
+                <option value="appliedArts">Faculty of Applied Arts</option>
+                <option value="science">Faculty of Science</option>
+                <option value="politicalScience">Faculty of Political Science</option>
+                <option value="informationTechnology">Faculty of Information Technology</option>
+                <option value="media">Faculty of Media and Mass Communication</option>
+                <option value="other">أخرى (Other)</option>
+            </select>
+
+            <label for="year">What year are you currently in?</label>
+            <select id="year" name="year" required>
+                <option value="firstYear">First Year</option>
+                <option value="secondYear">Second Year</option>
+                <option value="thirdYear">Third Year</option>
+                <option value="fourthYear">Fourth Year</option>
+                <option value="other">أخرى (Other)</option>
+            </select>
+
+            <label for="committee">Which council are you applying for?</label>
+            <select id="committee" name="committee" required>
+                <option value="webDevelopment">WEB DEVELOPMENT COUNCIL</option>
+                <option value="bankingInvestments">BANKING & INVESTMENTS COUNCIL</option>
+                <option value="dataAnalysisAI">DATA ANALYSIS & AI COUNCIL</option>
+                <option value="marketing">MARKETING COUNCIL</option>
+                <option value="humanResources">HUMAN RESOURCES COUNCIL</option>
+                <option value="graphicDesign">GRAPHIC DESIGN COUNCIL</option>
+            </select>
+
+            <label for="channel">Which channel do you know us from?</label>
+            <select id="channel" name="channel" required>
+                <option value="facebook">Facebook</option>
+                <option value="instagram">Instagram</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="friend">Friend</option>
+                <option value="university">University</option>
+                <option value="other">أخرى (Other)</option>
+            </select>
+
+            <label for="comments">Additional Comments or Information (If needed.):</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <label for="aboutYou">Tell us something about yourself!</label>
+            <textarea id="aboutYou" name="aboutYou" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; /* Ensure it's centered */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+input, select, textarea {
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .form-container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    input, select, textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form-container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    input, select, textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+</style>
